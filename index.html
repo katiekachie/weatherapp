@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katie's Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&&family=Press+Start+2P&family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+<body>
+<div class="container">
+<div class="row">
+<div class="col">
+<h1 id="city">Beppu</h1>
+<div class="date" id="current-time"></div>
+<span class="temp" id="current-temp">25°C</span>
+<br />
+</div>
+
+
+
+<div class="col">
+<form id="search-form">
+<div class="input-group">
+<input
+type="text"
+class="form-control"
+placeholder="change city"
+autofocus="true"
+id="search-city-input"
+/>
+             
+<button            
+id="check-city"
+class="btn btn-outline-secondary"
+type="submit"
+>
+                
+<img src="img/search.svg" width="30px" />
+</button>
+<button
+id="check-location"
+class="btn btn-outline-secondary"
+type="click"
+>
+                
+<img src="img/location.svg" class="current-location" width="30px" />
+</button>          
+</form>
+
+</div>
+         
+<br />
+          
+<div class="col current-weather">
+<img class="weather-pic" src="img/sun.svg" width="200px" />
+</div>
+</div>
+
+     
+<hr />
+
+      
+<div class="row">
+<div class="col futuretemp">
+<div class="futuredates">Monday</div>
+10°<img src="img/storm.svg" class="weatherimg" />
+</div>
+
+<div class="col futuretemp">
+<div class="futuredates">Tuesday</div>
+16°<img src="img/cloud.svg" class="weatherimg" />
+</div>
+
+<div class="col futuretemp">
+<div class="futuredates">Wednesday</div>
+5°<img src="img/snow.svg" class="weatherimg" />
+</div>
+
+<div class="col futuretemp">
+<div class="futuredates">Thursday</div>
+11°<img src="img/sunnycloud.svg" class="weatherimg" />
+</div>
+        
+<div class="col futuretemp">
+<div class="futuredates">Friday</div>
+16°<img src="img/rain.svg" class="weatherimg" />
+</div>
+
+<div class="col futuretemp">
+<div class="futuredates">Saturday</div>
+15°<img src="img/storm.svg" class="weatherimg" />
+</div>
+</div>
+
+<footer>
+Icons made by 
+<a
+href="https://www.flaticon.com/authors/dinosoftlabs"
+title="DinosoftLabs">DinosoftLabs</a>
+from
+<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+<div>Open source code made by Katie</div>
+</footer>
+</div>
+
+<script src="src/script.js"></script>
+</body>
+</html>
